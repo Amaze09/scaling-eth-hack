@@ -1,0 +1,1 @@
+The node for baching transactions of optimistic roll-up.
