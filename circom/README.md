@@ -3,6 +3,7 @@ Circuits for verifying ZK-proofs.
 -------- Steps to compile circom --------
 
 Step A: Compile circom circuit
+
 circom circuit.circom --json --wasm --r1cs --sym
 
 Step B: Generate circuit input
