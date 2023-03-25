@@ -70,7 +70,7 @@ snarkjs zkey verify circuit.r1cs pot14_final.ptau circuit_final.zkey
 22. Export the verification key
 snarkjs zkey export verificationkey circuit_final.zkey verification_key.json
 
-23: Create the proof
+23. Create the proof
 snarkjs groth16 prove circuit_final.zkey witness.wtns proof.json public.json
 snarkjs groth16 fullprove input.json circuit_js/circuit.wasm circuit_final.zkey proof.json public.json
 
