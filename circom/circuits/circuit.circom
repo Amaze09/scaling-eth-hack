@@ -1,7 +1,7 @@
 include "./leaf_existence.circom";
 include "./verify_eddsamimc.circom";
 include "./get_merkle_root.circom";
-// include "../node_modules/circomlib/circuits/mimc.circom";
+include "../node_modules/circomlib/circuits/mimc.circom";
 
 template ProcessTx(k){
     // k is depth of accounts tree
@@ -9,11 +9,11 @@ template ProcessTx(k){
     // accounts tree info
     signal input accounts_root;
     signal input intermediate_root;
-    // signal input accounts_pubkeys[2**k, 2];
-    signal input accounts_pubkeys[2];
+    signal input accounts_pubkeys[2**k][2];
+    // signal input accounts_pubkeys[2];
     // signal input accounts_pubkeys[[2],[2]];
-    // signal input accounts_balances[2**k];
-    signal input accounts_balances[2];
+    signal input accounts_balances[2**k];
+    // signal input accounts_balances[2];
     // transactions info
     signal input sender_pubkey[2];
     signal input sender_balance;
